@@ -11,31 +11,30 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.Eng. in Computer Science at Jilin University, China, 2019
+* M.S. in Information Technology at Rensselaer Polytechnic Institute, Troy, NY, US, 2021
+* Ph.D in Computer Science at University of Waterloo, 2025 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2021 - present: Research & Teaching Assistant
+  * University of Waterloo, Waterloo, ON, Canada
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2020: Research Intern
+  * IBM Research, Yorktown, NY, US
+  * Supervisor: [Dakuo Wang](https://www.dakuowang.com/) and [Lingfei Wu](https://sites.google.com/a/email.wm.edu/teddy-lfwu/)
+
+* Spring 2020: Teaching Assistant
+  * Rensselaer Polytechnic Institute, Troy, NY, US
+
+* Spring 2020: Software Engineer
+  * United Airlines, Chicago, US
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
+*  C++, Python, Java, PostgreSQL, HTML, Javascript, Flask, Vue.js, Unix, OpenCV
+*  Windows, MacOS
+<!-- 
 Publications
 ======
   <ul>{% for post in site.publications %}
@@ -56,4 +55,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
