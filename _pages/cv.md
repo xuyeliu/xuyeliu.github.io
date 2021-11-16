@@ -34,6 +34,7 @@ Skills
 ======
 *  C++, Python, Java, PostgreSQL, HTML, Javascript, Flask, Vue.js, Unix, OpenCV
 *  Windows, MacOS
+
 <!-- 
 Publications
 ======
