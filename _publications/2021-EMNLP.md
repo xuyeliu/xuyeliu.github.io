@@ -5,7 +5,7 @@ permalink: /publication/2021-EMNLP
 excerpt: ''
 date: 2021-10-02
 venue: 'In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing: Findings (EMNLP 2021), to appear'
-paperurl: 'https://arxiv.org/abs/2102.12592'
+paperurl: 'https://arxiv.org/abs/2104.01002'
 citation: '<b>Xuye Liu</b>*, Dakuo Wang*, April Yi Wang, Yufang Hou, and Lingfei Wu. . HAConvGNN: Hierarchical Attention Based Convolutional Graph Neural Network for Code Documentation Generation in Jupyter Notebooks In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing: Findings (EMNLP 2021), to appear'
 ---
    
