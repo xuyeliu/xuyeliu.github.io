@@ -32,7 +32,7 @@ Work experience
   
 Skills
 ======
-*  C++, Python, Java, PostgreSQL, HTML, Javascript, Flask, Vue.js, Unix, OpenCV
+*  C++, Python, Java, PostgreSQL, HTML, Javascript, React, Flask, Vue.js, Unix, OpenCV
 *  Windows, MacOS
 
 <!-- 
