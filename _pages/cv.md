@@ -13,7 +13,7 @@ Education
 ======
 * B.Eng. in Computer Science at Jilin University, China, 2019
 * M.S. in Information Technology at Rensselaer Polytechnic Institute, Troy, NY, US, 2021
-* Ph.D in Computer Science at University of Waterloo, 2025 (expected)
+* Ph.D in Computer Science at University of Waterloo, Jan 2026 (expected)
 
 Work experience
 ======
