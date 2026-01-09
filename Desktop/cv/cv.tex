@@ -1,0 +1,306 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{xeCJK}
+\usepackage{hyperref}
+\usepackage{array}
+
+\usepackage{fontawesome5}
+\usepackage{academicons}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{marvosym}
+\usepackage{longtable}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=0em}
+\setlist[enumerate]{leftmargin=0em}
+
+% --- Compact 2-page tuning (balanced, not crowded) ---
+\usepackage{setspace}
+\setstretch{0.955} % 再略紧一点的全局行距
+
+\setlength{\parskip}{1.5pt plus 0.5pt}
+\setlength{\itemsep}{1.5pt plus 0.3pt}
+\setlength{\parsep}{0pt}
+\setlength{\topsep}{2pt plus 0.5pt}
+
+% --- rSection spacing optimization (slightly tighter) ---
+\makeatletter
+\renewenvironment{rSection}[1]{
+  \vspace{0.6em} % section 顶部稍收紧
+  \noindent{\bf #1} \vspace{0.25em}\hrule
+  \begin{list}{}{
+    \setlength{\leftmargin}{0.5em}
+    \setlength{\rightmargin}{0em}
+    \setlength{\itemsep}{1.5pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{1.5pt}
+  }
+  \item[]
+}{
+  \end{list}
+  \vspace{0.2em} % section 底部稍收紧
+}
+\makeatother
+
+% --- Enumerate margin ---
+\setlist[enumerate]{leftmargin=0.9em, itemsep=1.5pt, topsep=1.5pt}
+\setlist[itemize]{leftmargin=0.9em, itemsep=1pt, topsep=1pt}
+\newenvironment{pubitemize}{%
+  \begin{itemize}[leftmargin=0.95em, topsep=0.25em, itemsep=0pt, parsep=0pt, partopsep=0pt]
+}{%
+  \end{itemize}
+}
+
+% --- 页边距略收窄 ---
+\usepackage[left=0.38in,top=0.38in,right=0.38in,bottom=0.38in]{geometry}
+
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Xuye Liu}
+\address{\href{https://xuyeliu.github.io}{xuyeliu.github.io} $|$ \href{https://scholar.google.ca/citations?hl=en&user=_qtzN2oAAAAJ}{Google Scholar} $|$ \href{mailto:xuye.liu@uwaterloo.ca}{xuye.liu@uwaterloo.ca}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+Machine learning researcher specializing in \textbf{multimodal generative AI} and \textbf{intelligent agents}, with expertise in diffusion models, reinforcement learning, and vision-language systems. Published 11+ papers at top-tier venues (ACL, NAACL, EMNLP, CHI, UIST). Focus on developing novel ML architectures and training methodologies that advance state-of-the-art in generative AI.
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} p{13.5cm} }
+ML/DL Frameworks & PyTorch, TensorFlow, Hugging Face, LangChain\\
+Programming & Python, JavaScript, HTML/CSS, C/C++, Java\\
+ML Techniques & Diffusion Models, Reinforcement Learning, GNNs, Vision-Language Models, RAG, Transformers\\
+Software \& Tools & Git, Docker, AWS, React.js, Flask, Node.js, Jupyter Notebooks\\
+Languages & English (fluent), Chinese (native)\\
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Education}
+\begin{enumerate}
+
+\item
+{\bf University of Waterloo}, Ph.D. in Computer Science \hfill {Sep. 2021 - Present}\\
+Advisors: Prof. \href{https://www.jeffjianzhao.com/}{Jian Zhao} and Prof. \href{https://sites.google.com/site/matf0123/}{Tengfei Ma}\\
+Research Focus: \textbf{Generative AI}, \textbf{Multimodal Learning}, \textbf{Natural Language Processing}, \textbf{Human-AI Collaboration}
+
+\item
+{\bf Rensselaer Polytechnic Institute}, M.Sc. in Computer Science \hfill {Aug. 2019 - Jan. 2021}\\
+GPA: 3.83/4.0
+
+\item
+{\bf Jilin University}, B.Eng. in Computer Engineering \hfill {Sep. 2015 - Jun. 2019}
+\end{enumerate}
+\end{rSection}
+
+\begin{rSection}{Industry and Research Experience}
+
+\begin{enumerate}
+
+\item
+{\bf University of Waterloo}, Graduate Research Assistant \hfill Sep. 2021 -- Present\\
+\vspace{-1em}
+\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt]
+\item Developed novel reinforcement learning frameworks for vision-language models and RAG systems, achieving improved generation quality and source attribution accuracy
+\item Built large-scale multimodal datasets (NBDESCRIB) with 10K+ annotated samples for code understanding, enabling improved ML model training
+\item Designed hierarchical attention mechanisms in GNNs for code-to-text generation, improving documentation quality by 15\% in ROUGE-LCS metrics
+\item Developed zero-shot video-text retrieval systems achieving state-of-the-art performance without task-specific training
+\item Led collaborative AI projects for presentation generation and code evaluation, resulting in 3 publications at CHI and UIST
+\end{itemize}
+
+\item
+{\bf Anytime AI}, Machine Learning Engineer Intern \hfill April 2025 -- Oct. 2025\\
+\vspace{-1em}
+\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt]
+\item Developed custom discovery algorithm using LangChain framework with LLMs to automate legal template filling, reducing manual processing time by 60\%
+\item Implemented retrieval-augmented generation (RAG) system for long-document search, improving query response accuracy by 40\%
+\item Optimized LLM inference pipeline for production deployment, reducing latency by 30\%
+\end{itemize}
+
+\item
+{\bf IBM Research}, Research Intern \hfill May 2020 -- Aug. 2020\\
+\vspace{-1em}
+\begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt]
+\item Designed and implemented GNN-based code documentation generation feature for IBM AutoAI platform
+\item Developed hierarchical attention GNN model improving ROUGE-LCS score by 15\% over baseline methods
+\item Developed full-stack ML features using React, Flask, and NodeJS, delivering production-ready solutions
+\end{itemize}
+\end{enumerate}
+% \item[4.]
+% {\bf United Airlines}, Software Engineer \hfill Jan. 2020 -- May 2020\\
+% \begin{itemize}
+% \item Implemented user-based collaborative filtering recommendation algorithms, improving recommendation relevance by 25\%
+% \item Developed full-stack data visualization tools using Vue.js and Flask for business intelligence dashboards
+% \item Deployed scalable solutions on AWS EC2, serving 10K+ daily active users
+% \end{itemize}
+
+\end{rSection}
+
+
+\begin{rSection}{Selected Publications and Projects, * is Equal Contribution}
+
+\begin{enumerate}
+
+\item[]
+\textcolor{OrangeRed}{Project:  \textbf{\underline{Multimodal Learning}} and \textbf{\underline{GenAI}}} (Neurips, ACL, EMNLP, NAACL, IJCAI)
+
+
+
+\item
+{\bf RL-Diffusion: Reinforcement-Learned Diffusion Guidance for Efficient Vision-Language Distillation}\\
+{\bf Xuye Liu}, Yimu Wang, Jian Zhao\\
+Present\\
+\begin{pubitemize}
+\item Proposed novel RL-based approach to optimize diffusion guidance for vision-language models, achieving efficient knowledge distillation with improved generation quality and reduced computational cost.
+\end{pubitemize}
+
+\item
+{\bf VISTA-RL: Enhancing Visual Source Attribution in Retrieval-Augmented Generation via Reinforcement Learning}\\
+{\bf Xuye Liu}, Xueguang Ma, Jian Zhao\\
+Present\\
+\begin{pubitemize}
+\item Developed RL framework to improve source attribution accuracy in RAG systems, enabling better traceability and reliability of generated content through learned retrieval strategies.
+\end{pubitemize}
+
+\item 
+{\bf Browsecomp-plus: A more fair and transparent evaluation benchmark of deep-research agent}\\
+Zijian Chen, Xueguang Ma, Shengyao Zhuang, et al., \underline{\bf Xuye Liu}, Nandan Thakur, Crystina Zhang, Luyu Gao, Wenhu Chen, Jimmy Lin\\
+Neurips Workshop(\textbf{Spotlight}) \& Under review in ICLR\\
+\begin{pubitemize}
+\item Developed comprehensive evaluation benchmark (830 queries, 100K+ documents) for research agents, introducing fairness metrics and transparency measures to assess deep-research capabilities in AI systems.
+\end{pubitemize}
+
+\item
+{\bf Survey of Video Diffusion Models: Foundations, Implementations, and Applications}\\
+Yimu Wang*, \underline{\bf Xuye Liu*}, Wei Pang*, Li Ma*, Shuai Yuan*, Paul Debevec, Ning Yu\\
+TMLR 2025 $|$ Transactions on Machine Learning Research\\
+\begin{pubitemize}
+\item Comprehensive survey of video diffusion models covering architectural innovations, training methodologies, and applications, providing a foundation for future research in generative video modeling.
+\end{pubitemize}
+
+\item
+{\bf NBDESCRIB: A Dataset for Text Description Generation from Tables and Code in Jupyter Notebooks with Guidelines}\\
+\underline{\bf Xuye Liu}, Tengfei Ma, Yimu Wang, Fengjie Wang, Jian Zhao\\
+ACL 2025 $|$ Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics\\
+\begin{pubitemize}
+\item Created large-scale multimodal dataset for generating natural language descriptions from code and tables, with comprehensive annotation guidelines enabling improved code understanding models.
+\end{pubitemize}
+
+\item
+{\bf ELIOT: Zero-Shot Video-Text Retrieval through Relevance-Boosted
+Captioning and Structural Information Extraction}\\
+\underline{\bf Xuye Liu}, Yimu Wang, Peng Shi, Jian Zhao\\
+NAACL 2025 $|$ Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies\\
+\begin{pubitemize}
+\item Introduced zero-shot retrieval method combining relevance-boosted captioning with structural information extraction, achieving state-of-the-art performance on video-text retrieval benchmarks.
+\end{pubitemize}
+
+\item
+{\bf HAConvGNN: Hierarchical Attention Based Convolutional Graph Neural Network for Code Documentation Generation}\\
+\underline{\bf Xuye Liu}, Dakuo Wang, April Yi Wang, Yufang Hou, Lingfei Wu\\
+EMNLP 2021 $|$ Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing\\
+\begin{pubitemize}
+\item Designed hierarchical attention mechanism in GNNs for code-to-text generation, improving documentation quality by 15\% in ROUGE-LCS through better code structure understanding.
+\end{pubitemize}
+
+\item
+{\bf Graph-Augmented Code Summarization in Computational Notebooks}\\
+April Y. Wang, Dakuo Wang, \underline{\bf Xuye Liu}, Lingfei Wu\\
+IJCAI 2021 $|$ Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence\\
+\begin{pubitemize}
+\item Proposed graph neural network approach for code summarization leveraging code structure and context, enhancing documentation quality through improved representation learning of code semantics.
+\end{pubitemize}
+
+% \item[]
+% \textcolor{OliveGreen}{Project: \textbf{\underline{Agent for Programmers and Designers}}} (TOCHI, UIST, CHI, IUI)
+
+% \item
+% {\bf MACEDON: Supporting Programmers with Real-Time Multi-Dimensional Code Evaluation and Optimization}\\
+% \underline{\bf Xuye Liu}, Yuzhe You, Xinrong Qiu, Tengfei Ma, Jian Zhao\\
+% UIST 2025 $|$ Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology\\
+% \textit{Built AI-powered system for real-time code evaluation across multiple dimensions (performance, readability, maintainability), leveraging ML models to provide actionable optimization suggestions.}
+
+% \item
+% {\bf Influencer: Empowering Everyday Users in Creating Promotional Posts via AI-infused Exploration and Customization}\\
+% \underline{\bf Xuye Liu}, Annie Sun, Pengcheng An, Tengfei Ma, Jian Zhao\\
+% CHI 2025 $|$ Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems\\
+% \textit{Developed generative AI system combining exploration and customization interfaces, enabling non-expert users to create high-quality promotional content through interactive ML-driven design assistance.}
+
+% \item
+% {\bf Slide4N: Creating Presentation Slides from Computational Notebooks with Human-AI Collaboration}\\
+% Fengjie Wang*, \underline{\bf Xuye Liu}*, Oujing Liu, Ali Neshati, Tengfei Ma, Min Zhu, Jian Zhao\\
+% CHI 2023 $|$ Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems\\
+% \textit{Designed collaborative AI system that automatically generates presentation slides from Jupyter notebooks, using ML to extract key insights and structure content for effective communication.} 
+% \item
+% {\bf How Data Scientists Improve Generated Code Documentation in Jupyter Notebooks}\\
+% Michael Muller, April Yi Wang, Steven I. Ross, et al., \underline{\bf Xuye Liu}, et al., Dakuo Wang\\
+% IUI Workshop 2021
+
+% \item
+% {\bf What Makes a Well-Documented Notebook? A Case Study of Data Scientists' Documentation Practices in Kaggle}\\
+% April Yi Wang, Dakuo Wang, Jaimie Drozdal, \underline{\bf Xuye Liu}, Soya Park, Steve Oney, Christopher Brooks\\
+% CHI EA 2021
+
+\end{enumerate}
+
+
+% \begin{rSection}{Patents}
+
+% \item[1.]
+% {\bf Learning-Based Automated Machine Learning Code Annotation with Graph Neural Network}\\
+% Dakuo Wang, Lingfei Wu, \underline{\bf Xuye Liu}, Yi Wang, Chuang Gan, Jing Xu, Xue Ying Zhang, Jun Wang, Jing James Xu\\
+% US Patent 11,928,156, 2024
+
+% \item[2.]
+% {\bf Learning-Based Automation Machine Learning Code Annotation in Computational Notebooks}\\
+% Dakuo Wang, Lingfei Wu, Yi Wang, \underline{\bf Xuye Liu}, Chuang Gan, Si Er Han, Bei Chen, Ji Hui Yang\\
+% US Patent 11,360,763, 2024
+
+% \item[3.]
+% {\bf Dots and Box V1.0}\\
+% \underline{\bf Xuye Liu}, Anbo Liu, Xueqi Wu\\
+% Patent No. 2016SR366619, 2016
+
+% \item[4.]
+% {\bf Intelligent Reconstruction System of Three-Dimensional House Plan V1.0}\\
+% Yi Xiao, \underline{\bf Xuye Liu}, Pan Li, Shuai Wang, Lingyun Zeng\\
+% Patent No. 2018SR450413, 2018
+\end{rSection}
+
+
+\begin{rSection}{Selected Honors and Awards}
+
+\begin{enumerate}  
+\item
+Publication Chair of VLM4RWD workshop in \textbf{Neurips 2025}\hfill 2025
+
+\item
+NAACL Travel Grant \hfill 2025
+
+\item
+Mitacs Accelerate Fellowship, Blackberry, Esentire \hfill 2023-2024
+
+\item
+International Doctoral Student Award, University of Waterloo \hfill 2021-2024
+
+% \item
+% Award for Excellence in Academic Performance, Jilin University \hfill 2015-2019
+
+\end{enumerate}
+\end{rSection}
+
+\begin{rSection}{Services}
+
+\item[]
+{\bf Conference and Workshop Reviews}
+\begin{itemize}
+\item Natural Language Processing: EMNLP, ACL, NAACL
+\item Human-Computer Interaction: CHI, CHI Late-Breaking Works (LBWs), VIS
+% \item Visualization: VIS
+\end{itemize}
+
+\end{rSection}
+
+\end{document}
