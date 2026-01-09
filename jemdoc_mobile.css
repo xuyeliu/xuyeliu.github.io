@@ -1,0 +1,98 @@
+@import url("jemdoc.css");
+
+body { 
+  margin-top: 0px; 
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  max-width: 100%; 
+  font-size: 80%;
+}
+.container {
+	flex-direction: column; /* 垂直排列 */
+	padding: 0;
+	margin: 0;
+}
+
+.left-section, .right-section {
+	width: 100%; /* 宽度占满整个屏幕 */
+}
+
+
+/* 修改left-section的布局 */
+.right-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center; /* 垂直居中对齐文字和图片 */
+	order: 1;
+	background-color: white;
+	border: 0;
+	margin-top: 2em;
+	padding-bottom: 0;
+}
+.right-section div {
+	flex: 1; /* 让文字信息占一半宽度 */
+}
+
+.left-section {
+	order: 2;
+	margin-right: 0;
+}
+
+.profile-pic {
+	width: 25%; /* 图片宽度为50% */
+	max-width: none; /* 取消原来的max-width限制 */
+	margin-left: 10px;
+	margin-right: 30px; /* 图片和文字之间留一些间距 */
+	margin-bottom: 0px;
+	border-radius: 50%;
+	margin-top: 0;
+}
+
+h1 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#fwtitle #toptitle {
+	padding-left: 0.5em;
+	margin-bottom: 0em;
+}
+
+div#toptitle {
+	padding-bottom: 0.2em;
+	margin-bottom: 0em;
+	/*border-bottom: 3px double gray;*/
+}
+
+ul {
+	padding-left: 1em;
+}
+
+.icon {
+	height: 20px
+}
+
+.tdw {
+	padding-left: 1em;
+}
+
+.photo {
+	width: 40%;
+}
+
+.my-navbar-style {
+	margin-left: -1em;
+	margin-right: -1em;
+	top: 0em;
+	margin-top: -1em;
+	width: 100vw;
+}
+
+.ult {
+	columns: 1;
+}
